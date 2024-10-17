@@ -1,0 +1,20 @@
+from cProfile import label
+from tkinter import *
+import requests
+from PIL import Image, ImageTk
+from io import BytesIO
+
+def show_image():
+
+
+window = Tk()
+window.title('Dogs')
+window.geometry('360x420')
+
+label = Label()
+label.pack(pady=10)
+
+button = Button(text='Загрузить изображение', command=show_image)
+button.pack(pady=10)
+
+window.mainloop()
